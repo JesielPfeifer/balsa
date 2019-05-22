@@ -48,13 +48,13 @@ public:
         if ((this->pesoAtual + vPeso) > this->capTon) {
             cout << "=================================================================="<<endl;
             cout << "\nLimite de peso atingido!"<<endl;
-            cout << "A seguradora nao cobre os custos de um eventual sinistro.";
-            cout << " Se deseja continuar a responsabilidade sera toda do balseiro";
+            cout << "A seguradora nao cobre os custos de um eventual sinistro.\n";
+            cout << "Se deseja continuar a responsabilidade sera toda do balseiro\n";
             cout << "este tera de arcar com eventuais custos.\n";
             do {
-                cout << "Deseja continuar? [S] ou [N]: ";
-                cout << "=================================================================="<<endl;
+                cout << "\nDeseja continuar? [S] ou [N]: ";
                 cin >> continua;
+                cout << "=================================================================="<<endl;
             } while (continua != "s" && continua != "S" && continua != "n" && continua != "N");
 
             if (continua == "s" || continua == "S") {
